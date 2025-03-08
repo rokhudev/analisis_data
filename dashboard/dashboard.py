@@ -6,14 +6,14 @@ import streamlit as st
 sns.set(style='dark')
 
 # Load data
-all_data = pd.read_csv("dashboard\main_datas.csv")
+all_data = pd.read_csv("dashboard/main_datas.csv")
 
 # Streamlit app
 st.title('Dashboard')
 
 # Sidebar
 st.sidebar.title('Sidebar')
-st.sidebar.image('dashboard\foto-ecommerce.jpg', use_column_width=True)
+st.sidebar.image("dashboard/foto-ecommerce.jpg", use_column_width=True)
 
 # Penyebaran Pelanggan
 st.subheader('Penyebaran Pelanggan')
