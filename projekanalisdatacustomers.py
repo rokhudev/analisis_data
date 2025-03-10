@@ -13,7 +13,7 @@ Original file is located at
 
 ## Menentukan Pertanyaan Bisnis
 
-- Pertanyaan 1: Bagaimana Penyebaran Pelanggan>
+- Pertanyaan 1: Bagaimana Penyebaran Pelanggan?
 - Pertanyaan 2: Bagaimana pendistribusi pengiriman?
 - Pertanyaan 3: Bagaimana trend pengirimannya?
 
@@ -186,8 +186,14 @@ axes1.barh(customer_state.index, customer_state.values,
 plt.show() #tampilkan
 
 """**Insight Penyebaran Pelanggan:**
-- Penyebaran pelanggan terbanyak ada di Sao Paolo dengan data pelanggan lebih dari 1750 lebih pelanggan. Lalu di ikuti oleh yang kedua Rio de Janeiro dengan lebih dari 750 pelanggan. Hal ini bisa dilihat di data bahwa perbedaann top 1 dan top 2 sangat banyak hanpir 2 kali lipatnya. Lalu di lanjutkan peringkat top 3 dari Belo Horizonte di 250 pelanggan hal ini juga ada perbedaan yang sangat signifikan antara top 2 dan top 3, perbedaannya lebih dari 3 kali lipatnya lebih besar top 2.
-- penyebaran dari top 4 ke top 20 perbedaannya tidak terlalu jauh karena masing masin kota pelanggannya masih di bawah 250 pelanggan.
+
+- Berdasarkan grafik dari analisis data pelanggan, menunjukkan bahwa penyebaran pelanggan tak merata di berbagai kota. Kota Sao Paulo mempunyai jumlah pelanggan paling banyak, diikuti oleh kota Rio de Janeiro dan kota Belo Horizonte. Ketiga kota ini memiliki jumlah pelanggan yang jauh lebih tinggi dibandingkan kota-kota lainnya, menunjukkan bahwa wilayah metropolitan besar lebih dominan dari segi jumlah pelanggan. Selain itu ada kota-kota lain dengan jumlah pelanggan sedikit seperti Recife, Jundiaí, dan Sorocaba. Hal ini merupakan faktor aktivitas ekonomi dan populasi menjadi peran dalam jumlah pelanggan di suatu kota.  
+
+- Distribusi populasi dan aktivitas ekonomi menunjukkan kesenjangan utama antara kota dan sebagian besar pelanggan dan sebagian besar pelanggan di kota. Kota-kota besar biasanya merupakan pusat utama pelanggan mereka, tetapi kota-kota kecil memiliki sedikit komitmen. Ini dapat disebabkan oleh faktor infrastruktur, orang, atau belanja untuk strategi pemasaran. Ini berfokus pada daerah dengan kelompok populasi yang lebih besar.
+
+**Kesimpulan**
+
+Dari analisis dapat disimpulkan bahwa penyebaran pelanggan sangat dipengaruhi oleh faktor populasi dan ekonomi. Kota-kota besar seperti Sao Paulo dan Rio de Janeiro menjadi kunci utama dengan jumlah pelanggan terbanyak, disisi lain kota-kota lain memiliki keterlibatan yang lebih rendah. Agar dapat meningkatkan jangkauan pelanggan di kota-kota dengan jumlah pelanggan yang lebih sedikit  diperlukan strategi pemasaran dan distribusi yang lebih merata untuk diterapkan, seperti peningkatan promosi di wilayah-wilayah tertentu atau penguatan jaringan layanan di daerah dengan potensi pertumbuhan pelanggan.
 
 ###Pertanyaan 2:Bagaimana pendistribusi pengiriman?
 """
@@ -215,9 +221,14 @@ for i, jumlah in enumerate(jumlah_pesanan_status.values): #tampilkan jumlah pesa
 plt.show()
 
 """**Insight Pendistribusian Pengiriman:**
-- Sebagian besar pesanan pelanggan dalam tahap delivered, menjelaskan bahwa ada 8641 sedang pengiriman.
-- shipped canceled, unavaible, proccessing, invoce dan approved jumlahnya jauh lebih sedikit menunjukkan pesanan dalam kondisi baik dan lancar.
-- rendahnya canceled daripada delivered menandakan bahwa pelanggan puas akan sistem pendistribusian.
+
+- Berdasarkan grafik status distribusi pengiriman pesanan, mayoritas pesanan telah berhasil ditahap status "delivered" sebanyak 8.641 pesanan terkirim. Jumlah ini sangat tinggi dibandingkan status lainnya, mendefinisikan bahwa sangat besar pesanan sampai ke pelanggan dengan aman dan sukses. Status "shipped" berada di posisi kedua dengan 105 pesanan, yang berarti pesanan masih dalam perjalanan ke pelanggan.  
+
+- Terdapat beberapa pesanan yang terkendala, adanya status "canceled" (59 pesanan), "unavailable" (51 pesanan), "processing" (28 pesanan), "invoiced" (25 pesanan), dan "approved" (1 pesanan). Dalam kategori ini relatif kecil dibandingkan total pesanan yang telah dikirimkan, yang mendefinisikan bahwa sistem pengiriman berjalan dengan baik, meskipun masih ada beberapa kendala dalam proses distribusi.  
+
+**Kesimpulan**  
+
+Distribusi pengiriman pesanan menyimpulkan bahwa terdapat keberhasilan tinggi dengan sebagian besar pesanan telah berhasil dikirimkan kepada pelanggan. Namun, masih ada kendala kecil pesanan yang mengalami hambatan, seperti pembatalan atau status yang belum terselesaikan. Untuk meningkatkan efisiensi distribusi, diperlukan evaluasi lebih lanjut terhadap penyebab keterlambatan atau pembatalan pesanan agar dapat meningkatkan kepuasan pelanggan dan mengurangi jumlah pesanan yang tertunda.
 
 ###Pertanyaan 3: Bagaimana trend pengirimannya?
 """
@@ -242,12 +253,18 @@ plt.grid(True)
 plt.show()
 
 """**Insight Tren Pengiriman:**
-- awal trend pada data 2016-10 menunjukan adanya peningkatkan signifikan pengiriman ke tahun selanjutnya.
-- puncak pengirimannya terjadi pada 2018-8 dengan jumlah lebih dari 700. hal ini bisa dikarenakan faktor musiman dalam peningkatan penjulan.
-- penurunan drastis terjadi pada 2018-9 dikarenakan kemungkinan perubahan kebijaksanaan perusahaan, ada masalah logistik atau masalah trend pasar.
-- adanya beberapa fluktuasi pengiriman sebelum meningkat menandakan adanya faktor musiman.
+
+- Berdasarkan grafik tren bulanan pengiriman pesanan melihatkan bahwa jumlah pesanan yang terkirim mengalami peningkatan yang signifikan dari akhir tahun 2016 hingga pertengahan tahun 2018.
+- Pada awal periode jumlah pesanan yang dikirim relatif rendah, tetapi mulai mengalami kenaikan yang stabil sejak awal 2017.
+- Tren terus meningkat dengan beberapa ketidakstabilan kecil hingga mencapai puncaknya sekitar pertengahan tahun 2018, dengan jumlah pengiriman tertinggi melebihi 700 pesanan dalam satu bulan.  
+- Setelah tren mencapai puncak, terdapat penurunan drastis pada bulan September 2018, di mana jumlah pesanan yang dikirim hampir nol. Penurunan tajam ini bisa disebabkan oleh faktor eksternal seperti perubahan kebijakan, gangguan logistik, atau faktor musiman yang mempengaruhi permintaan dan distribusi pesanan.  
+
+**Kesimpulan**  
+
+Secara keseluruhan dapat disimpulkan tren untuk mengirimkan pesanan menunjukkan pertumbuhan positif dengan peningkatan yang stabil dan signifikan dari 2016 hingga pertengahan 2018. Namun, tren ini tetap stabil di masa depan karena penurunan dramatis pada bulan September 2018 membutuhkan analisis lebih lanjut untuk memahami penyebab dan menemukan solusi.
 
 ## Analisis Lanjutan (Opsional)
+Bagaimana perbandingan jumlah kota dalam setiap kategori pelanggan?
 
 Menampilkan clusterisasi kategori antara customer unik di setiap kota, mengelompokkannya pada kategori kota pelanggan tertinggi, sedang dan rendah berdasarkan jumlah pelanggan unik ditiap kota yang berguna untuk menganalisis distribusi pelanggan di berbagai kota dan mengidentifikasi kota pontensial dan optimalisasi pemasaran.
 """
@@ -279,5 +296,13 @@ plt.show()
 
 """**Insight Analisis Lanjutan:**
 
-- Berdasarkan grafik terdapat kota pelanggan rendah menunjukan adanya jumlah kota yang sangat dominan dibadnignakan kategori kota pelanggan sedang dan kota pelanggan tinggi. hal ini dikarenakan sebagian besar kota hanya memiliki sedikit pelanggan unik, sedangkan segelintir kota yang memiliki jumlah pelanggan yang cukup besar. hal yang baik dilakukan adalah memaksimalkan strategi pemasaran bisnis di kota pelanggan sedang dan tinggi karena belum menjadi pasar utama.
+**Analisis Kategori Kota Berdasarkan Jumlah Pelanggan**  
+
+- Berdasarkan grafik melihatkan bahwa jumlah kota dengan kategori pelanggan rendah mendominasi secara signifikan dibandingkan dengan kategori lainnya. Kota dalam kategori pelanggan rendah memiliki jumlah yang jauh lebih besar, dengan selisih yang sangat mencolok dibandingkan kota dalam kategori pelanggan sedang dan tinggi. Sementara itu, jumlah kota dengan kategori pelanggan sedang dan tinggi sangat kecil dan hampir tidak terlihat dalam perbandingan visualiasi batang dengan kategori pelanggan rendah.  
+
+- Perbedaan sangat besar dapat mengindikasikan bahwa mayoritas kota yang terdata memiliki jumlah pelanggan yang relatif rendah, sementara hanya sedikit kota yang memiliki jumlah pelanggan sedang atau tinggi. Hal ini dapat disebabkan oleh faktor distribusi populasi, aksesibilitas layanan, atau daya beli masyarakat di masing-masing kota.  
+
+**Kesimpulan**  
+
+Mayoritas kota yang terdata masuk dalam kategori pelanggan rendah, sedangkan hanya sedikit kota yang memiliki pelanggan dalam jumlah sedang dan tinggi. Hal ini menunjukkan bahwa distribusi pelanggan lebih terpusat di sejumlah kecil kota tertentu, sementara sebagian besar kota memiliki data pelanggan yang lebih kecil.
 """
