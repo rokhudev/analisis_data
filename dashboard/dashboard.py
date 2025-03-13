@@ -3,8 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import os
 
 sns.set(style='dark')
+
+st.write(os.listdir("."))  # Melihat daftar file dalam direktori saat ini
 
 # buka data
 all_data = pd.read_csv('main_datas.csv')
