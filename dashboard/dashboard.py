@@ -10,14 +10,14 @@ sns.set(style='dark')
 st.write(os.listdir("."))  # Melihat daftar file dalam direktori saat ini
 
 # buka data
-all_data = pd.read_csv('dashboard\main_datas.csv')
+all_data = pd.read_csv('dashboard/main_datas.csv')
 
 # Streamlit 
 st.title('Dashboard')
 
 # Sidebar
 st.sidebar.title('Sidebar')
-st.sidebar.image('dashboard\foto-ecommerce.jpg', use_column_width=True)
+st.sidebar.image('dashboard/foto-ecommerce.jpg', use_column_width=True)
 
 # Filter Trend Pengiriman
 st.sidebar.subheader("Filter Penyaringan Trend Pengiriman")
