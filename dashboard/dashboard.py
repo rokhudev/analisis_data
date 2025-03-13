@@ -14,7 +14,7 @@ st.title('Dashboard')
 
 # Sidebar
 st.sidebar.title('Sidebar')
-st.sidebar.image("foto-ecommerce.jpg", use_column_width=True)
+st.sidebar.image('foto-ecommerce.jpg', use_column_width=True)
 
 # Filter Trend Pengiriman
 st.sidebar.subheader("Filter Penyaringan Trend Pengiriman")
