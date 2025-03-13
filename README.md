@@ -1,5 +1,4 @@
-URL : [https://64udhuquarmxdsybehen4f.streamlit.app/]
-(https://ad4s64t6wtdo235amfbr4f.streamlit.app/)
+URL : https://ad4s64t6wtdo235amfbr4f.streamlit.app/
 
 
 ## Setup Environment - Anaconda
