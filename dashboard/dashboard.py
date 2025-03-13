@@ -7,7 +7,7 @@ import streamlit as st
 sns.set(style='dark')
 
 # buka data
-all_data = pd.read_csv("main_datas.csv")
+all_data = pd.read_csv('main_datas.csv')
 
 # Streamlit 
 st.title('Dashboard')
