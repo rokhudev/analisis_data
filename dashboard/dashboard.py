@@ -7,8 +7,6 @@ import os
 
 sns.set(style='dark')
 
-st.write(os.listdir("."))  # Melihat daftar file dalam direktori saat ini
-
 # buka data
 all_data = pd.read_csv('dashboard/main_datas.csv')
 
